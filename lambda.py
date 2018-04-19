@@ -44,3 +44,7 @@ print(list(map(f, c)))
 a = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 print([i for i in a if i > 5 and i < 10])
 
+# 연습문제: .jpg, .png 파일만 출력
+files = ['font', '1.png', '10.jpg', '11.gif', '2.jpg', '3.png', 'table.xslx', 'spec.docx']
+
+print(list(filter(lambda x: x.find('.jpg') != -1 or x.find('.png') != -1, files)))
