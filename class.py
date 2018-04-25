@@ -19,11 +19,14 @@ print(isinstance(gday, Person1))
 
 # 클래스 속성
 class Person2:
-    def __init__(self):
+    def __init__(self, name, age, address):
         self.hello = '하이요'
+        self.name = name
+        self.age = age
+        self.address = address
 
     def greeting(self):
-        print(self.hello)
+        print('{0} 저는 {1}입니다.'.format(self.hello, self.name))
 
-gday = Person2()
+gday = Person2('죵', 27, '일산')
 gday.greeting()
